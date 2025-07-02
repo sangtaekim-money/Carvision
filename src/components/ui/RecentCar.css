@@ -1,0 +1,99 @@
+.recent-car-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    position: relative;
+    padding: 20px 0;
+    border: 1px solid #ddd; /* Add border similar to Howtobuy */
+    border-radius: 10px;
+  }
+  
+  .recent-car-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .recent-car-slider {
+    width: 90%;
+    max-width: 800px;
+    height: 40vh; /* Decrease height */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .recent-car-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the image is fully visible */
+    border-radius: 10px;
+  }
+  
+  .dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  }
+  
+  .recent-car-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .recent-car-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .recent-car-name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .recent-car-year {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .recent-car-slider {
+      width: 95%;
+      height: 35vh; /* Adjust height for mobile */
+      margin: 0 20px; /* Increase gap on left and right */
+    }
+  
+    .recent-car-title {
+      font-size: 20px;
+    }
+  
+    .recent-car-name {
+      font-size: 18px;
+    }
+  
+    .recent-car-year {
+      font-size: 14px;
+    }
+  }

@@ -1,0 +1,140 @@
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px; /* Compact padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky; /* Sticky header */
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1rem; /* Compact font size */
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust logo size */
+    margin-right: 10px; /* Spacing between logo and text */
+}
+
+.hamburger {
+    font-size: 1.5rem; /* Slightly larger size for better visibility */
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none; /* Hidden by default, shown on small screens */
+    z-index: 1100; /* Ensure it stays above other elements */
+}
+
+.hamburger:hover {
+    color: #ddd; /* Hover effect */
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; /* Spacing between links */
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem; /* Compact font size */
+    padding: 5px 10px; /* Padding for better clickability */
+    border-radius: 3px; /* Slight rounding */
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #444; /* Hover background */
+    color: #fff;
+}
+
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between icon and text */
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem; /* Compact font size */
+    position: absolute; /* Position it independently */
+    top: 10px; /* Align it at the top */
+    right: 15px; /* Align it to the right */
+    z-index: 1050; /* Ensure it doesn't overlap the hamburger menu */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background */
+    padding: 5px 10px; /* Add padding for better clickability */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.language-switcher img {
+    height: 20px; /* Adjust icon size */
+    width: 20px;
+    border-radius: 50%; /* Make the icon circular */
+    transition: transform 0.3s ease;
+}
+
+.language-switcher:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly brighter background on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.language-switcher:hover img {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+.language-switcher span {
+    font-size: 0.9rem; /* Compact font size */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger menu on small screens */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjusted top value */
+        right: 10px;
+        background-color: rgba(51, 51, 51, 0.95); /* Transparent background */
+        padding: 10px 15px; /* Padding inside the menu */
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 8px 0; /* Spacing between links */
+        font-size: 1rem; /* Slightly larger font size for mobile */
+    }
+
+    .language-switcher {
+        top: 20px; /* Adjust position for mobile */
+        right: 60px; /* Ensure it doesn't overlap the hamburger menu */
+    }
+}

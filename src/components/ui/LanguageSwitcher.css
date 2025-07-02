@@ -1,0 +1,86 @@
+.language-switcher {
+  position: absolute; /* Position it within the header */
+  top: 10px; /* Adjust to align with the header */
+  right: 20px; /* Position it on the right side */
+  z-index: 1000; /* Ensure it stays above other header elements */
+  display: flex;
+  flex-direction: column; /* Make the toggle vertical */
+  align-items: center; /* Center the icons vertically */
+  gap: 5px; /* Add spacing between the icons */
+  background-color: rgba(248, 249, 250, 0.9); /* Slightly transparent background */
+  padding: 8px 12px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust for larger screens (desktop) */
+@media (min-width: 768px) {
+  .language-switcher {
+    top: 15px; /* Slightly lower for desktop */
+    right: 30px; /* Adjust position to avoid overlapping */
+  }
+}
+
+/* Adjust for smaller screens (mobile) */
+@media (max-width: 767px) {
+  .language-switcher {
+    top: 10px; /* Keep it aligned with the header */
+    right: 5px; /* Move closer to the edge */
+    padding: 6px 10px; /* Reduce padding for smaller screens */
+    gap: 5px; /* Reduce gap between elements */
+  }
+}
+
+.language-toggle {
+  display: flex;
+  flex-direction: column; /* Make the icons stack vertically */
+  align-items: center; /* Center the icons */
+  gap: 5px; /* Add spacing between the icons */
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.language-toggle:hover {
+  transform: scale(1.1);
+}
+
+.language-icon {
+  font-size: 20px; /* Size of the world icon */
+}
+
+.dropdown-icon {
+  font-size: 16px; /* Size of the dropdown arrow */
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.language-dropdown button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.language-dropdown button:hover {
+  background-color: #f0f0f0;
+}
+
+.language-dropdown button.active {
+  font-weight: bold;
+  color: #007bff;
+}

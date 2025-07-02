@@ -1,0 +1,97 @@
+{
+  "carDetails": [
+    {
+      "label": "Make",
+      "name": "make",
+      "fieldType": "dropdown",
+      "options": [
+        "Toyota",
+        "Honda",
+        "Ford",
+        "Chevrolet",
+        "Nissan",
+        "BMW",
+        "Mercedes-Benz",
+        "Audi",
+        "Tesla",
+        "Volkswagen",
+        "Hyundai",
+        "Kia",
+        "Lexus",
+        "Subaru",
+        "Mazda",
+        "Jeep",
+        "Dodge",
+        "Ram",
+        "GMC",
+        "Volvo",
+        "Land Rover",
+        "Jaguar",
+        "Porsche",
+        "Fiat",
+        "Alfa Romeo",
+        "Mitsubishi",
+        "Infiniti",
+        "Acura",
+        "Mini",
+        "Buick",
+        "Cadillac",
+        "Chrysler",
+        "Lincoln",
+        "Maserati",
+        "Bentley",
+        "Rolls-Royce",
+        "Aston Martin",
+        "Ferrari",
+        "Lamborghini",
+        "McLaren",
+        "Pagani",
+        "Bugatti"
+      ],
+      "column": 1,
+      "icon": "FaIndustry"
+    },
+    
+    {
+      "label": "Year",
+      "name": "year",
+      "fieldType": "number",
+      "column": 1,
+      "icon": "FaCalendarAlt",
+      "placeholder": "Enter car Year"
+    },
+    {
+      "label": "Fuel Type",
+      "name": "fuelType",
+      "fieldType": "dropdown",
+      "options": ["Petrol", "Diesel", "Electric", "Hybrid", "Gasoline"],
+      "column": 1,
+      "icon": "FaGasPump"
+    },
+    {
+      "label": "Mileage",
+      "name": "mileage",
+      "fieldType": "number",
+      "column": 1,
+      "icon": "FaTachometerAlt",
+      "placeholder": "Enter car mileage"
+    },
+    {
+      "label": "Category",
+      "name": "category",
+      "fieldType": "dropdown",
+      "options": ["Sedan", "SUV", "Truck", "Coupe", "Convertible", "Van", "Truck", "Electric", "Bus"],
+      "column": 1,
+      "icon": "FaCar"
+    },
+    {
+      "label": "Selling Price",
+      "name": "sellingPrice",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "FaMoneyBillAlt",
+      "placeholder": "Enter selling price"
+    }
+  
+  ]
+}

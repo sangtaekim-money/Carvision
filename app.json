@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "6435fb2e-bcca-49f3-a698-c3348fddc3f9"
+      }
+    },
+    "android": {
+      "package": "carvisioni.com"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name": "korea-car",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
+    "@headlessui/react": "^2.2.0",
+    "@mui/material": "^7.0.2",
+    "@neondatabase/serverless": "^1.0.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "aws-sdk": "^2.1692.0",
+    "bootstrap": "^5.3.5",
+    "cloudinary": "^2.6.0",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "drizzle-orm": "^0.41.0",
+    "dropbox": "^10.34.0",
+    "expo": "^53.0.9",
+    "express": "^5.1.0",
+    "firebase": "^11.6.1",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "install": "^0.13.0",
+    "isomorphic-fetch": "^3.0.0",
+    "multer": "^2.0.1",
+    "npm": "^11.3.0",
+    "pg": "^8.14.1",
+    "prerender-node": "^3.8.0",
+    "puppeteer": "^24.7.2",
+    "react": "^19.0.0",
+    "react-app-rewired": "^2.2.1",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "react-dropbox-chooser": "^0.0.5",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^5.5.0",
+    "react-lazy-load-image-component": "^1.6.3",
+    "react-modal": "^3.16.3",
+    "react-router-dom": "^6.14.0",
+    "react-scripts": "^5.0.1",
+    "react-swipeable": "^7.0.2",
+    "react-toastify": "^11.0.5",
+    "stream-browserify": "^3.0.0",
+    "twilio": "^5.5.2",
+    "typescript": "^3.9.10",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && set NODE_OPTIONS=--max-old-space-size=4096 && set GENERATE_SOURCEMAP=false && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-private-methods": "^7.18.6",
+    "drizzle-kit": "^0.30.6"
+  }
+}

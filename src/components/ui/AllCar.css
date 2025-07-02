@@ -1,0 +1,88 @@
+/* Hidden Left-Side Menu */
+.hidden-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background: #f8f9fa;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  transition: left 0.3s ease; /* Smooth slide-in effect */
+  z-index: 1000;
+}
+
+.hidden-menu.visible {
+  left: 0; /* Slide in when visible */
+}
+
+.menu-content {
+  padding: 10px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.menu-item:hover {
+  background: #e9ecef;
+}
+
+/* Car Image (Square Format) */
+.menu-logo {
+  width: 80px; /* Increase size for better visibility */
+  height: 80px; /* Match width for a square shape */
+  object-fit: cover; /* Ensure the image fits within the square */
+  border-radius: 8px; /* Slightly rounded corners for a modern look */
+  border: 1px solid #ddd; /* Add a subtle border */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+}
+
+.menu-logo:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.menu-name {
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Toggle Button */
+.menu-toggle {
+  position: fixed;
+  top: 50%; 
+  left: 10px; 
+  transform: translateY(-50%); 
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px; 
+  z-index: 1100;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle:hover {
+  background: #0056b3;
+}
+
+
+.listings-section,
+.how-to-buy-section {
+  margin: 0; 
+  padding: 0; 
+}

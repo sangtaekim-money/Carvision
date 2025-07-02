@@ -1,0 +1,91 @@
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 10px; /* Add small gap on left and right */
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px; /* Increase padding for better spacing inside the bar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.search-bar button:hover {
+  color: #0056b3;
+}
+/* Tags Section */
+.tags-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 10px; /* Add spacing between tags */
+  padding: 10px 0;
+  margin-bottom: 20px;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #007bff #f8f9fa; /* For Firefox */
+}
+
+.tags-container::-webkit-scrollbar {
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+.tags-container::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Scrollbar thumb color */
+  border-radius: 4px;
+}
+
+.tags-container::-webkit-scrollbar-track {
+  background-color: #f8f9fa; /* Scrollbar track color */
+}
+
+.tag {
+  background-color: #f8f9fa;
+  color: #007bff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevent tags from wrapping */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tag:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Back Button */
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}

@@ -1,0 +1,93 @@
+/* Help Page Styling */
+.help-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .back-button:hover {
+    color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .help-sections {
+    margin-top: 20px;
+  }
+  
+  .help-section {
+    margin-bottom: 30px;
+  }
+  
+  .help-section h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .help-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .help-section ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .faq-toggle {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .faq-toggle:hover {
+    text-decoration: underline;
+  }
+  
+  .faq-answer {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .faq-answer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .faq-answer a:hover {
+    text-decoration: underline;
+  }

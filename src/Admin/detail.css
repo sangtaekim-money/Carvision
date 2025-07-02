@@ -1,0 +1,202 @@
+.detail-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.go-back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.go-back-button:hover {
+  background-color: #0056b3;
+}
+
+.detail-title input {
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 5px;
+  width: calc(33% - 10px);
+}
+
+.main-media-container {
+  position: relative;
+  text-align: center;
+}
+
+.main-media {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Arrows */
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10; /* Ensure arrows are above other elements */
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+/* Hide arrows in full-screen mode */
+.fullscreen .arrow-left,
+.fullscreen .arrow-right {
+  display: none;
+}
+
+.details-section {
+  margin-top: 20px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.detail-item input,
+.detail-item textarea {
+  margin-left: 10px;
+  padding: 5px;
+  flex: 1;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+/* Fullscreen Mode */
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background for full-screen mode */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.fullscreen-media {
+  max-width: 100%; /* Ensure the image takes up the full width */
+  max-height: 100%; /* Ensure the image takes up the full height */
+  object-fit: contain; /* Maintain aspect ratio without cropping */
+  cursor: pointer;
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
+}
+/* Uploaded Images Grid */
+.uploaded-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Individual Image Item */
+.uploaded-image-item {
+  position: relative;
+  cursor: grab;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.uploaded-image-item:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+}
+
+/* Remove Icon */
+.remove-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.remove-icon:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+/* Uploaded Image */
+.uploaded-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Add Image Button Styles */
+.add-image-btn {
+  background-color: #17a2b8;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background 0.2s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.add-image-btn:last-child {
+  margin-right: 0;
+}
+
+.add-image-btn:hover {
+  background-color: #138496;
+  transform: scale(1.05);
+}
