@@ -159,7 +159,7 @@ const handleNext = async () => {
       )}
       <h1 className="form-title">Add Listing</h1>
       <form onSubmit={handleSubmit} className="add-listing-form">
-        {/* Step 1: Add Pictures */}
+        
         {currentStep === 1 && (
           <div className="form-step">
             <h2 className="step-title">Step 1: Add Pictures</h2>
@@ -315,3 +315,4 @@ const handleNext = async () => {
 }
 
 export default AddListing;
+
